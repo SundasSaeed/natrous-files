@@ -4,10 +4,8 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
-  
 
   &_side {
-  
     height: 52rem;
     transition: all 0.8s ease;
     position: absolute;
@@ -22,32 +20,30 @@
     &--front {
       background-color: $color-white;
     }
-    &--back{
+    &--back {
       transform: rotateY(180deg);
 
       &-1 {
         background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light
-          ,$color-secondary-dark
-         );
+          $color-secondary-light,
+          $color-secondary-dark
+        );
       }
       &-2 {
         background-image: linear-gradient(
           to right bottom,
-          $color-primary-light
-          ,$color-primary-dark
-         );
+          $color-primary-light,
+          $color-primary-dark
+        );
       }
       &-3 {
         background-image: linear-gradient(
           to right bottom,
-          $color-tertiary-light
-          ,$color-tertiary-dark
-         );
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
       }
-
-
     }
   }
 
@@ -64,37 +60,33 @@
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius:3px;
-    border-top-right-radius:3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     &--1 {
       background-image: linear-gradient(
           to right bottom,
           $color-secondary-light,
           $color-secondary-dark
         ),
-        url("../assets/nat-5.jpg");
+        url("../../assets/nat-5.jpg");
     }
     &--2 {
       background-image: linear-gradient(
-          to right bottom
-          ,$color-primary-light
-          ,$color-primary-dark
-          
-         
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
         ),
-        url("../assets/nat-6.jpg");
+        url("../../assets/nat-6.jpg");
     }
-    
+
     &--3 {
       background-image: linear-gradient(
           to right bottom,
-          $color-tertiary-light
-         ,$color-tertiary-dark
-         
+          $color-tertiary-light,
+          $color-tertiary-dark
         ),
-        url("../assets/nat-7.jpg");
+        url("../../assets/nat-7.jpg");
     }
-    
   }
   &_heading {
     font-size: 2.8rem;
@@ -134,15 +126,13 @@
         rgba($color-tertiary-dark, 0.85)
       );
     }
-
-
   }
   &_details {
-    padding:3rem;
+    padding: 3rem;
     ul {
       list-style: none;
       width: 80%;
-      margin:0 auto;
+      margin: 0 auto;
       li {
         text-align: center;
         font-size: 1.5rem;
@@ -154,27 +144,27 @@
       }
     }
   }
-//front-side styling
-      &_cta{
-        position: absolute;
-        top: 50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        width: 90%;
-        text-align: center;
-      }
-    &_price-box{
-      text-align: center;
-      color:$color-white;
-      margin-bottom: 8rem;;
-    }
+  //front-side styling
+  &_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  &_price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
 
-    &_price-only{
-      font-size: 1.4rem;
-      text-transform: uppercase;
-    }
-    &_price-value{
-      font-size: 6rem;
-      font-weight: 100;
-    }
+  &_price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  &_price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
 }
