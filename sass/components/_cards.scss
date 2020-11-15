@@ -72,7 +72,7 @@
           $color-secondary-light,
           $color-secondary-dark
         ),
-        url("../../assets/nat-5.jpg");
+        url("../assets/nat-5.jpg");
     }
     &--2 {
       background-image: linear-gradient(
@@ -82,7 +82,7 @@
           
          
         ),
-        url("../../assets/nat-6.jpg");
+        url("../assets/nat-6.jpg");
     }
     
     &--3 {
@@ -92,7 +92,7 @@
          ,$color-tertiary-dark
          
         ),
-        url("../../assets/nat-7.jpg");
+        url("../assets/nat-7.jpg");
     }
     
   }

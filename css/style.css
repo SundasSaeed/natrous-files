@@ -243,11 +243,11 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card_picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../../assets/nat-5.jpg"); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../assets/nat-5.jpg"); }
     .card_picture--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../../assets/nat-6.jpg"); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../assets/nat-6.jpg"); }
     .card_picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../../assets/nat-7.jpg"); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../assets/nat-7.jpg"); }
   .card_heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -490,7 +490,7 @@ body {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../assets/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/nat-10.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
