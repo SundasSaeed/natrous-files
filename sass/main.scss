@@ -10,19 +10,21 @@
 @import "base/utilitties";
 
 
-@import "components/button";
-@import "components/compositions";
-@import "components/cards";
-@import "components/feature-box";
-@import "components/story";
-@import "components/bg-video";
-@import "components/form";
+ @import "components/button";
+ @import "components/compositions";
+ @import "components/cards";
+ @import "components/feature-box";
+ @import "components/story";
+ @import "components/bg-video";
+ @import "components/form";
+
+ @import "layout/footer";
+ @import "layout/grid";
+ @import "layout/header";
+ @import "layout/navigation";
 
 
-@import "layout/grid";
-@import "layout/header";
-
-
+ 
 @import "pages/home";
 
 
