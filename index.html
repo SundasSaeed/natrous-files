@@ -12,7 +12,9 @@
    <div class="navigation">
      <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
 
-     <lable for="navi-toggle"class="navigation_button">MENU</lable>
+     <label for="navi-toggle"class="navigation_button">
+       <span class="navigation_icon">&nbsp;</span>
+     </label>
 
      <div class="navigation_background">&nbsp;</div>
 
@@ -35,7 +37,7 @@
           <span class="heading-primary--main">outdoors</span>
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
       </div>
     </header>
     <main>
@@ -67,22 +69,31 @@
             <a href="#" class="btn-text">learn more &rarr;</a>
           </div>
           <div class="col-1-of-2">
+
             <div class="composition">
-              <img
-                src="./assets/nat-1-large.jpg"
-                alt="photo 1"
-                class="composition_photo composition_photo--p1"
-              />
-              <img
-                src="./assets/nat-2-large.jpg"
-                alt="photo 2"
-                class="composition_photo composition_photo--p2"
-              />
-              <img
-                src="./assets/nat-3-large.jpg"
-                alt="photo 3"
-                class="composition_photo composition_photo--p3"
-              />
+         <img srcset="./assets/nat-1.jpg 300w,./assets/nat-1-large.jpg 1000w"
+              sizes="(max-width:56.25em) 20vw, (max-width:37.5em)30vw,300px"
+              alt="photo 1"
+              class="composition_photo composition_photo--p1"
+              src="./assets/nat-1-large.jpg">
+
+        <img srcset="./assets/nat2-.jpg 300w,./assets/nat-2-large.jpg 1000w"
+              sizes="(max-width:56.25em) 20vw, (max-width:37.5em)30vw,300px"
+              alt="photo 2"
+              class="composition_photo composition_photo--p2"
+              src="./assets/nat-2-large.jpg">
+
+        <img srcset="./assets/nat-3.jpg 300w,./assets/nat-3-large.jpg 1000w"
+              sizes="(max-width:56.25em) 20vw, (max-width:37.5em)30vw,300px"
+              alt="photo 3"
+              class="composition_photo composition_photo--p3"
+              src="./assets/nat-3-large.jpg"
+
+
+
+
+
+         
             </div>
           </div>
         </div>
@@ -139,7 +150,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -169,7 +180,7 @@
                     <p class="card_price-only">Only</p>
                     <p class="card_price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -199,7 +210,7 @@
                     <p class="card_price-only">Only</p>
                     <p class="card_price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -229,7 +240,7 @@
                     <p class="card_price-only">Only</p>
                     <p class="card_price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -358,7 +369,13 @@
     </main>
     <footer class="footer">
       <div class="footer_logo-box">
-        <img src="./assets/logo-green-2x.png" alt="full logo" class="footer_logo">
+        <picture class="footer_logo">
+          <source srcset="./assets/logo-green-small-1x.png 1x,./assets/logo-green-small-2x.png 2x"
+          media="(max-width:37.5em)">
+          <img srcset="./assets/logo-green-1x.png 1x, ./assets/logo-green-2x.png 2x" alt="full logo" 
+          src="./assets/logo-green-2x.png">
+        </picture>
+        
       </div>
       <div class="row">
         <div class="col-1-of-2"> 
@@ -377,6 +394,28 @@
           Built my <a href="#" class="footer_link">SUNDASAEED</a>for his online course <a href="#" class="footer_link">Advance css & sass</a> .copyright &copy; by SUNDASAEED.you are 100% allowed to use this webpage for both personal & commercial use but not to claim it as your own design.A credit to the orignal aurthor,SUNDASAEED is ofcourse highly appreciated!</p>
       </div>
     </footer>
+
+
+
+    <div class="popup"id="popup">
+      <div class="popup_content">
+        <div class="popup_left">
+        <img src="./assets/nat-8.jpg"alt="tour photo"class="popup_img">
+        <img src="./assets/nat-9.jpg"alt="tour photo"class="popup_img">
+        </div>
+        <div class="popup_right">
+          <a href="#section-tours" class="popup_close">&times;</a>
+         <h2 class="heading-secondary u-margin-bottom-small">
+         start booking now
+         </h2>
+         <h3 class="heading-tertiary u-margin-bottom-small">
+           important &ndash; please read these terms before booking
+         </h3>
+         <p class="popup_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde voluptatibus officiis quasi veniam tempore sequi, ipsum itaque cumque at, voluptatum qui sint nesciunt voluptatem earum quis, asperiores cupiditate tempora inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatibus ullam sed nisi. Enim dolor assumenda nobis delectus nemo, sit odio ut nisi vitae unde perspiciatis? A nemo perspiciatis ad? </p>
+         <a href="" class="btn btn--green"> BOOK NOW</a>
+        </div>
+      </div>
+    </div>
     <!--
 <section class="grid-test">
 <div class="row">
